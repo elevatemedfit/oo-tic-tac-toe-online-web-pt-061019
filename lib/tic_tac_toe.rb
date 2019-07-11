@@ -110,6 +110,13 @@ def play
  until over?
   turn
 end
+if won?
+  "Congratulations Winner #{winner}!"
+
+else draw?
+  "Cat's Game!"
+end
+
 end
 
 
