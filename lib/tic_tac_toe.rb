@@ -85,9 +85,10 @@ class TicTacToe
  end
 
   def draw?
+in_progress = !won? && !full?
 if full? && !won?
   true
-else won? && draw?
+else won? || in_progress
   false
 end
 end
