@@ -93,7 +93,7 @@ class TicTacToe
  end
  end
 
- def winner(won?)
+ def winner
     if (@board[combo_index[0]])== "X"
      return "X"
  elsif
