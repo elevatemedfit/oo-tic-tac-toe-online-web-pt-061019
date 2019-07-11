@@ -87,7 +87,7 @@ class TicTacToe
   def draw?
 if full? && !won?
   true
-else won? && !draw?
+else won? && draw?
   false
 end
 end
