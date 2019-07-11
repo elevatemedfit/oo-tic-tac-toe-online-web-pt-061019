@@ -93,8 +93,6 @@ end
 end
 
 
-  end
-
  def full?                              #full means a draw, someone won, or game-in-progress
    turn_count==9
  end
