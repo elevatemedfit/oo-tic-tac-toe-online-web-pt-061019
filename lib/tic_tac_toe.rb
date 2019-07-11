@@ -111,9 +111,9 @@ def play
   turn
 end
 if won?
-  "Congratulations Winner #{winner}!"
+  puts "Congratulations Winner #{winner}!"
 elsif draw?
-  "Cat's Game!"
+  puts "Cat's Game!"
 end
 
 end
