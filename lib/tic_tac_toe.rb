@@ -104,7 +104,12 @@ class TicTacToe
     nil
 end
 end
-   end
+end
+
+def play
+turn
+end
+
 
 
 
