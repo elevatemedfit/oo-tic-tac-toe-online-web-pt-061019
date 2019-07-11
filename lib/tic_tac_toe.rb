@@ -85,7 +85,7 @@ class TicTacToe
  end
 
   def draw?
-    full? || !won?
+    turn_count==9 && !won?
   end
 
 
