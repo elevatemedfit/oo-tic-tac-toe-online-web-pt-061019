@@ -90,6 +90,7 @@ class TicTacToe
    else
  end
  end
+ end
 
   def draw?
     turn_count==9 && !won?
