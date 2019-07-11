@@ -93,9 +93,10 @@ class TicTacToe
  end
 
  def winner(combo_index)
-   if won?(combo_index)=="X"
+    won?
+    if (combo_index)=="X"
    return "X"
- elsif won?(combo_index)=="O"
+ elsif (combo_index)=="O"
    return "O"
  else
    return nil
