@@ -85,16 +85,19 @@ class TicTacToe
  end
 
   def draw?
- #   if turn_count==9 && !won?
- #     true
- #   else
- #     false
- #   end
+if full? && !won?
+  true
+else won? && !draw?
+  false
+end
+end
+
+
   end
 
  def full?                              #full means a draw, someone won, or game-in-progress
-   turn_count==9 
-  end
+   turn_count==9
+ end
 
 
 
