@@ -107,7 +107,8 @@ end
 end
 
 def play
-turn
+ turn
+ over?
 end
 
 
