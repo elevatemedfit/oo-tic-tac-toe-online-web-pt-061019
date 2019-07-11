@@ -84,14 +84,14 @@ class TicTacToe
    if WIN_COMBINATIONS.detect do |combo_index|
      @board[combo_index[0]]=="X" && @board[combo_index[1]]=="X" && @board[combo_index[2]]=="X"
      return combo_index
-   elsif WIN_COMBINATIONS.detect do |combo_index|
+   elsif
      @board[combo_index[0]]=="Y" && @board[combo_index[1]]=="Y" && @board[combo_index[2]]=="Y"
      return combo_index
    else
      false
  end
  end
- 
+
 
   def draw?
     turn_count==9 && !won?
