@@ -84,13 +84,23 @@ class TicTacToe
     WIN_COMBINATIONS.detect do |combo_index|
   if (@board[combo_index[0]])== "X" && (@board[combo_index[1]])== "X" && (@board[combo_index[2]])== "X"
      return combo_index
-  elsif (@board[combo_index[0]])== "Y" && (@board[combo_index[1]])== "Y" && (@board[combo_index[2]])== "Y"
+  elsif (@board[combo_index[0]])== "O" && (@board[combo_index[1]])== "O" && (@board[combo_index[2]])== "O"
      return combo_index
    else
      false
  end
  end
  end
+
+ def winner
+   if won?(combo_index)=="X"
+   return "X"
+ elsif won?(combo_index)=="O"
+   return "O"
+ else
+   return nil
+ end
+   end
 
 
   def draw?
