@@ -95,7 +95,7 @@ class TicTacToe
 
  def winner(combo_index)
     won?
-     combo_index[0]=="X"
+    if combo_index[0]=="X"
      return "X"
  elsif
       combo_index[0]=="O"
@@ -104,6 +104,7 @@ class TicTacToe
    return nil
  end
    end
+ end
 
 
   def draw?
