@@ -81,7 +81,11 @@ class TicTacToe
  end
 
  def won?
-
+   if WIN_COMBINATIONS.each {|index| [index]=="X"}
+     puts " X Wins! #{index}"
+   else WIN_COMBINATIONS.each{|index| [index]=="O"}
+     puts " O Wins! #{index}"
+ end
  end
 
   def draw?
