@@ -82,10 +82,10 @@ class TicTacToe
 
  def won?
     WIN_COMBINATIONS.detect do |combo_index|
-  if (@board[combo_index[0]]=="X") && (@board[combo_index[1]]=="X") && @board[combo_index[2]]=="X"
-     return combo_index)
-  elsif (@board[combo_index[0]]=="Y") && (@board[combo_index[1]]=="Y") && (@board[combo_index[2]]=="Y"
-     return combo_index)
+  if (@board[combo_index[0]])=="X" && (@board[combo_index[1]])=="X" && (@board[combo_index[2]])=="X"
+     return combo_index
+  elsif (@board[combo_index[0]])=="Y" && (@board[combo_index[1]])=="Y" && (@board[combo_index[2]])=="Y"
+     return combo_index
    else
      false
  end
