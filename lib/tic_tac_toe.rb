@@ -85,12 +85,8 @@ class TicTacToe
  end
 
   def draw?
-if full? && !won?
-  true
-else won? || !won? && !full?
-  false
-end
-end
+    full? || !won?
+  end
 
 
  def full?                              #full means a draw, someone won, or game-in-progress
