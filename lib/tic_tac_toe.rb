@@ -81,10 +81,13 @@ class TicTacToe
  end
 
  def won?
-   if WIN_COMBINATIONS.each {|index| [index]=="X"}
-     puts " X Wins! #{index}"
-   else WIN_COMBINATIONS.each{|index| [index]=="O"}
-     puts " O Wins! #{index}"
+   if WIN_COMBINATIONS.detect do |combo_index|
+     @board[combo_index[0]]=="X" && @board[combo_index[1]]=="X" && @board[combo_index[2]]=="X"
+     return combo_index
+   elsif WIN_COMBINATIONS.detect do |combo_index|
+     @board[combo_index[0]]=="Y" && @board[combo_index[1]]=="Y" && @board[combo_index[2]]=="Y"
+     return combo_index
+   else
  end
  end
 
