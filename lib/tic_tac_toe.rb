@@ -93,9 +93,9 @@ class TicTacToe
  end
 
  def winner
-   if won?(combo_index)=="X"
+   if won? && (combo_index)=="X"
    return "X"
- elsif won?(combo_index)=="O"
+ elsif won? && (combo_index)=="O"
    return "O"
  else
    return nil
