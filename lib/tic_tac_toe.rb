@@ -112,8 +112,7 @@ def play
 end
 if won?
   "Congratulations Winner #{winner}!"
-
-else draw?
+elsif draw?
   "Cat's Game!"
 end
 
