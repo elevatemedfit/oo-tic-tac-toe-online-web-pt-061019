@@ -88,9 +88,10 @@ class TicTacToe
      @board[combo_index[0]]=="Y" && @board[combo_index[1]]=="Y" && @board[combo_index[2]]=="Y"
      return combo_index
    else
+     false
  end
  end
- end
+ 
 
   def draw?
     turn_count==9 && !won?
