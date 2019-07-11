@@ -92,7 +92,7 @@ class TicTacToe
  end
  end
 
- def winner
+ def winner(combo_index)
    if won? && (combo_index)=="X"
    return "X"
  elsif won? && (combo_index)=="O"
